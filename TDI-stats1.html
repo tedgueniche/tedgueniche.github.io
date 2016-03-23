@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <title></title>
+
+    <script type="text/javascript">//<![CDATA[
+      window.onload=function(){
+        var sample = {
+          "ns" : "twitter.sample",
+          "count" : '15 016 155',
+          "size" : '6.729 GB',
+          "avgObjSize" : '0.448 KB',
+          "totalIndexSize" : '214.216 MB',
+          "indexSizes" : {
+            "_id_" : '146.866 MB',
+            "created_at_1" : '67.350 MB'
+          },
+        };
+
+        var filter = {
+          "ns" : "twitter.filter",
+          "count" : '6 460 013',
+          "size" : '3.019 GB',
+          "avgObjSize" : '0.467 KB',
+          "totalIndexSize" : '96.788 MB',
+          "indexSizes" : {
+            "_id_" : '65.867 MB',
+            "created_at_1" : '30.920 MB'
+          },
+        };
+
+
+        document.getElementById("sample").innerHTML = JSON.stringify(sample, undefined, 2);
+        document.getElementById("filter").innerHTML = JSON.stringify(filter, undefined, 2);
+      };
+
+    </script>
+  </head>
+
+  <body>
+    <h2>Sample Feed (1% of all english tweets)</h2>
+    <pre id="sample"></pre>
+
+    <h2>Filter Feed (All tweets mentionning)</h2>
+    <h4>WalMart, Wal-Mart, WMT, Exxon Mobil, XOM, ExxonMobil, CVX, Chevron, texaco, apple, Apple, AAPL, VZ, Verizon, Verizon Communications, Hewlett-Packard, HP, HPQ, JPM, JPMorgan, J.P. Morgan Chase, MSFT, Microsoft, microsoft, amazon, Amazon, AMZN, Alphabet, Google, GOOG, bestbuy, Best Buy, BBY, CMCSA, Comcast, XFINITY, Qualcomm, QCOM</h4>
+    <pre id="filter"></pre>
+  </body>
+</html>
